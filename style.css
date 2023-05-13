@@ -176,3 +176,37 @@ nav .menu a {
     }
 
 }
+
+/* Blog Section Styles */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 10px;
+    gap: 60px;
+}
+
+.blog {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+}
+
+.blog .thumbnail {
+    object-fit: contain;
+}
+
+.blog .blogpost {
+    background-color: var(--secondary-color);
+    padding: 16px;
+    margin: 23px 0;
+}
+
+.blog .blog-content {
+    margin-top: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+    .blog {
+        grid-template-columns: 1fr;
+    }
+}
