@@ -227,3 +227,39 @@ main {
         grid-template-columns: 1fr;
     }
 }
+
+/* Aside Styles */
+
+aside .wrapper {
+    display: flex;
+    align-items: center;
+}
+
+aside .wrapper .thumbnail {
+    flex: 1;
+}
+
+aside .wrapper .content {
+    flex: 2;
+    padding: 16px;
+}
+
+aside .wrapper p,span,a {
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .site-container {
+        width: 100%;
+        padding: 0 24px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    aside .wrapper {
+        margin: 24px 0;
+    }
+}
