@@ -205,6 +205,23 @@ main {
     margin-top: 24px;
 }
 
+.pagination {
+    display: inline-block;
+}
+
+.pagination .active {
+    border: 1px solid var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+.pagination a {
+    color: var(--primary-color);
+    float: left;
+    padding: 8px 12px;
+    text-decoration: none;
+    border: none;
+}
+
 @media only screen and (max-width: 768px) {
     .blog {
         grid-template-columns: 1fr;
